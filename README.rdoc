@@ -5,9 +5,9 @@ number while you are in the Application.
 
 Sample SMS handler:
 
-call $phonenumber, {
+    call $phonenumber, {
     :network => "SMS"}
-say $message
+   say $message
 
 Sample Call handler:
 
