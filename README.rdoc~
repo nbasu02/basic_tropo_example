@@ -1,0 +1,18 @@
+Very bare basic rails tropo app, just to see how to make a simple tropo SMS or call.  To set yourself up, go to Tropo's
+website and create an account, then make your first application.  From there, create ruby files under "Your Hosted Files",
+preferably two different ones, that will be your handlers, and link them to your Application.  Be sure to set up a phone
+number while you are in the Application.
+
+Sample SMS handler:
+
+    call $phonenumber, {
+    :network => "SMS"}
+   say $message
+
+Sample Call handler:
+
+call $phonenumber
+say $message
+
+The only files I added to this project were the text_controller.rb and a blank views/text/sendSMS.html.erb files to
+send the message.  You'll need to add the token from your account and phone number to get anything to send.
